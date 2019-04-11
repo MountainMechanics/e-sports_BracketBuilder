@@ -1,0 +1,19 @@
+{
+    "name": "felix/bracket-builder",
+    "description": "A student-specific exercise for an E-sports bracket builder",
+    "type": "project",
+    "authors": [
+        {
+            "name": "MountainMechanics",
+            "email": "6133@htl.rennweg.at"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BracketBuilder\\": "classes/"
+        }
+    },
+    "require": {
+        "doctrine/orm": "^2.6"
+    }
+}
