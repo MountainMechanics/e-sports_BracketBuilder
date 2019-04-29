@@ -14,6 +14,7 @@
         }
     },
     "require": {
-        "doctrine/orm": "^2.6"
+        "doctrine/orm": "^2.6",
+        "typo3fluid/fluid": "^2.6"
     }
 }

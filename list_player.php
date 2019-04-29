@@ -2,7 +2,7 @@
 use BracketBuilder\Player;
 require_once "bootstrap.php";
 
-$playerRepository = $entityManager->getRepository('Player');
+$playerRepository = $entityManager->getRepository('player');
 $players = $playerRepository->findAll();
 
 foreach ($players as $player) {

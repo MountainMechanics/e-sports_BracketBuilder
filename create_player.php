@@ -10,13 +10,12 @@ use BracketBuilder\Player;
 
 require "bootstrap.php";
 
-$newPlayerName = $argv[1];
+$newPlayerName = $_GET['name'];
 echo "Player name: ".$newPlayerName;
 
 $player = new Player($newPlayerName);
 
 $entityManager->persist($player);
 $entityManager->flush();
-
-echo "Created Player
-with Name " . $player->getName() . "\n";
+header('Content-Type: application/json');
+echo json_encode($player);
